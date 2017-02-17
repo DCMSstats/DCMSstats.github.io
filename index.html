@@ -1,24 +1,15 @@
 <!DOCTYPE html>
-<style type="text/css">
-html, body {
-    margin: 0;
-    height: 150%;
-}
-iframe {
-    display: block;       /* iframes are inline by default */
-    border: none;         /* Reset default border */
-    height: 90vh;        /* Viewport-relative units */
-    width: 90vw;
-}
-</style>
-
 <html>
 <body style="margin:0px;padding:0px;overflow:hidden">
 <h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages. 3</p>
+<p>I'm hosted with GitHub Pages. 4</p>
   
-<iframe src="https://dcmsstats.github.io/current/DCMS/dashboard.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="90%" width="100%">
-</iframe>
+<select onchange="location = this.options[this.selectedIndex].value;">
+    <option>Please select</option>
+    <option value="http://www.apple.com/">Apple</option>
+    <option value="http://www.bbc.com">BBC</option>
+    <option value="http://www.facebook.com">Facebook</option>
+</select>
 
 </body>
 </html>
