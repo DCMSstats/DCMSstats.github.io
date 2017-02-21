@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+    <html>
+    
+    <head>
+        
+        <STYLE type="text/css">
+            @import "compass/css3";
+            html,
+            body {
+                height: 100%;
+            }
+            
+            h1 {
+                height: inherit;
+                vertical-align: bottom;
+                text-align: right;
+                margin: 0 0 0 0;
+                display: table-cell;
+                display: inline;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 40px;
+            }
+            
+            h2 {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                margin: 0 0 0 0;
+            }
+            
+            p {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                margin: 0 0 0 0;
+            }
+            
+            p.b {
+                font-weight: 900;
+                color: rgba(0,161,160,1)
+                ;
+            }
+            
+            li {
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                margin-left: 2px;
+            }
+            
+            ol {
+                margin-left: 20px;
+                padding-left: 0px;
+            }
+            
+            div {
+                <!--- border-style: dotted;
+                --->
+            }
+            
+            div.header {
+                display: table;
+                width: 100%
+            }
+            
+            div.line {
+                height: 5px;
+                width 100%;
+                background-color: rgba(0,161,160,1)
+                ;
+                margin-top: 2px;
+            }
+            
+            div.tweet {
+                width: 98%;
+                background-color: rgba(0,161,160,0.3)
+                ;
+                font-family: "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+                font-size: 16px;
+                margin:2px;
+                border-radius:8px;
+                padding:4px;
+                display: -webkit-flex;
+                -webkit-flex-direction: row;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            
+            div.listbox {
+                width: 98%;
+                background-color: rgba(0,161,160,0.3)
+                ;
+                font-family: "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
+                margin:1px;
+                border-radius:8px;
+                padding:2px;
+            }
+            
+            .container {
+                max-height:18vh;
+                overflow:hidden;
+            }
+            
+            .container img {
+                width:100%
+            }
+            
+            img.header {
+                vertical-align: bottom;
+                display: table-cell;
+                height: 20%
+            }
+            
+            img.wc {
+                display: table-cell;
+                max-width: 100%
+            }
+            
+            img.pic {
+                max-width: 100%;
+                max-height: 20%;
+                margin-left: auto;
+                margin-right: auto
+            }
+            
+            span.header {
+                vertical-align: bottom;
+                text-align: right;
+                display: table-cell
+            }
+            
+            div.numberCircle {
+                border-radius: 50%;
+                width: 18px;
+                height: 18px;
+                padding: 4px;
+                background: #fff;
+                border: 2px solid rgba(0,161,160,1)
+                ;
+                color: rgba(0,161,160,1)
+                ;
+                text-align: center;
+                font: 16px Arial,
+                sans-serif;
+                font-weight: bold;
+                order:1;
+                flex-shrink: 0;
+            }
+            
+            img.profile {
+                border-radius: 6px;
+                width: 60px;
+            }
+            
+            div.tweetext {
+                order: 2;
+                margin: 3px;
+            }
+        
+        </STYLE>
+        
+        <title>Twitter Dashboard</title>
+    
+    </head>
+    
+    <body>
+        
+        <div class="header">
+            <span class="header"><img class="header" src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Department_for_Communities_and_Local_Government_logo.svg/1920px-Department_for_Communities_and_Local_Government_logo.svg.png" /></span>
+            <span class="header"><h1>Twitter Dashboard<h1/></span>
+            <p>97,857 followers, 15,687 tweets</p>
+            <p>08 February 2017 - 17 February 2017</p>
+        </div>
+        <div class="line"></div>
+        <div style="width: 100%; height: 80%;">
+            <div style="float:left; width: 49%;">
+                <div style="float:left; width: 49%;">
+                    <h2>26 tweets from DCLG:</h2>
+                    <img class="wc" src="main-wc.png" />
+                    <div class="line"></div>
+                    <div style="width: 48%; float:left; margin-left:0%;" class="listbox">
+                        <p><b>Most Used Hashtags</b></p>
+                        <ol>
+                            <li>housingwhitepaper</li>
+                            <li>ww1</li>
+                            <li>vcpavingstones</li>
+                            <li>wwi</li>
+                            <li>northernpowerhouse</li>
+                            <li>jobs</li>
+                            <li>leeds</li>
+                            <li>domesticabuse</li>
+                        </ol>
+                    </div>
+                    <div style="float:right; width: 48%;" class="listbox">
+                        <p><b>Most Mentioned Users</b></p>
+                        <ol>
+                            <li>gavinbarwellmp</li>
+                            <li>yourcroydon</li>
+                            <li>lborouniversity</li>
+                            <li>londonportauth</li>
+                            <li>sajidjavid</li>
+                            <li>big_ideas_co</li>
+                            <li>marcus4nuneaton</li>
+                            <li>llepnews</li>
+                        </ol>
+                    </div>
+                </div>
+                <div style="float:right; width: 49%;">
+                    <h2>695 tweets mentioning DCLG:</h2>
+                    <img class="wc" src="all-wc.png"/>
+                    <div class="line"></div>
+                    <div style="width: 48%; float:left; margin-left:0%;" class="listbox">
+                        <p><b>Most Used Hashtags</b></p>
+                        <ol>
+                            <li>housingwhitepaper</li>
+                            <li>localgov</li>
+                            <li>housing</li>
+                            <li>pmqs</li>
+                            <li>englishmyway</li>
+                            <li>unremembered</li>
+                            <li>opendata</li>
+                            <li>marketing</li>
+                        </ol>
+                    </div>
+                    <div style="float:right; width: 48%;" class="listbox">
+                        <p><b>Most Engaged Users</b></p>
+                        <ol>
+                            <li>tompoole007</li>
+                            <li>big_ideas_co</li>
+                            <li>themjcouk</li>
+                            <li>colinwilson20</li>
+                            <li>jolewis3468</li>
+                            <li>reasondigital</li>
+                            <li>leejasper</li>
+                            <li>retailmentoring</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div style="float:left; width: 100%;">
+                    <div class="line"></div>
+                    <h2>DCLG retweets:</h2>
+                    <p style="font-size: 20px; display: inline;">DCLG retweeted </p> 
+                    <p class="b" style="font-size: 20px; display:inline">9 tweets</p>
+                    <p style="font-size: 20px; display: inline;"> from </p>
+                    <p class="b" style="font-size: 20px; display: inline;">5 users</p>
+                </div>
+                
+                <div style="float:left; width: 100%;">
+                    <div class="line"></div>
+                    <h2>Engagement:</h2>
+                    <div style="float:left; width: 33.2%;">
+                        <img class="wc" src="rts-time.png"/>
+                    </div>
+                    <div style="float:left; width: 33.2%;">
+                        <img class="wc" src="favs-time.png"/>
+                    </div>
+                    <div style="float:right; width: 33.2%;">
+                        <img class="wc" src="replies-time.png"/>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+            
+            <div style="float:right; width: 49%;">
+                <h2>Most popular tweets:</h2>
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/816970050485841920/ucQ9v4yO_normal.jpg" class="profile"></div>
+                    <div class="tweetext">
+                        <p><b>CommunitiesUK</b>
+                            <br>From #Liverpool to #Leeds, share your views on how we can deliver the ambitions in the #NorthernPowerhouse strategy https://t.co/Y1Qiruuq55 https://t.co/hf88bKjd1y</p>
+                        <p><b>16</b> likes, <b>23</b> retweets - <a href=https://twitter.com/statuses/831904770336108544>16:35 15 February 2017</a></p>
+                    </div>
+                </div>
+                
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/816970050485841920/ucQ9v4yO_normal.jpg" class="profile"></div>
+                    <div class="tweetext">
+                        <p><b>CommunitiesUK</b>
+                            <br>.@Marcus4Nuneaton visits @lborouniversity @LLEPNews  to announce the new @entzonegov for #Leicester &amp; #Loughborough https://t.co/F9aJMvR8q6</p>
+                        <p><b>14</b> likes, <b>24</b> retweets - <a href=https://twitter.com/statuses/831128217058684928>13:09 13 February 2017</a></p>
+                    </div>
+                </div>
+                
+                <div class="line"></div>
+                
+                <h2>Top media:</h2>
+                
+                <div style="float:left; width: 33.2%;">
+                <div class="container">
+                    <a href="https://twitter.com/statuses/831904770336108544"><img class="pic" src="http://pbs.twimg.com/tweet_video_thumb/C4uE-k0WQAUjBU2.jpg" />
+                </div>
+                    <p><b>16</b> likes, <b>23</b> retweets
+                    <br> <a href=https://twitter.com/statuses/831904770336108544>16:35 15 February 2017</a></p>
+                </div>
+                
+                <div style="float:left; width: 33.2%;">
+                <div class="container">
+                    <a href=https://twitter.com/statuses/831128217058684928><img class="pic" src="http://pbs.twimg.com/media/C4jCtOWWAAAurDI.jpg" />
+                </div>
+                    <p><b>14</b> likes, <b>24</b> retweets
+                    <br> <a href=https://twitter.com/statuses/831128217058684928>13:09 13 February 2017</a></p>
+                </div>
+                
+                <div style="float:right; width: 33.2%;">
+                <div class="container">
+                    
+                    <a href=https://twitter.com/statuses/832246551640670209><img class="pic" src="http://pbs.twimg.com/media/C4y708HWQAAKqyV.jpg" />
+                </div>
+                    <p><b>12</b> likes, <b>10</b> retweets
+                    <br> <a href=https://twitter.com/statuses/832246551640670209>15:13 16 February 2017</a></p>
+                </div>
+                
+                <div style="clear:both"></div>
+                
+                <div class="line"></div>
+                
+                <h2>Most popular mentions:</h2>
+                
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/702877325805936641/n7pEKufK_normal.png" class="profile"></div>
+                    <div class="tweetext"><b>RAAN_BERKS</b>
+                        <br>
+                        <p>Needs immediate intervention by @ECHR_Press @DHgovuk @PHE_uk @CommunitiesUK @HeadUKCivServ.Aviation/gov't dept/regulator won't reform itself https://t.co/QS49zkJowQ</p>
+                        <p><b>26</b> likes, <b>55</b> retweets - <a href=https://twitter.com/statuses/830135932774973441>19:26 10 February 2017</a></p>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <div><img src="http://pbs.twimg.com/profile_images/378800000190121198/b9ca34c95d3201be2b86119deffe2351_normal.jpeg" class="profile"></div>
+                    <div class="tweetext"><b>Open_Data</b>
+                        <br>
+                        <p>Really chuffed to share our new-look @CommunitiesUK @ODCommunities #linkedata site - https://t.co/6qUiK5KAqj.   Feedback please!. https://t.co/BNgFtguGNm</p>
+                        <p><b>13</b> likes, <b>16</b> retweets - <a href=https://twitter.com/statuses/829394088994693120>18:18 08 February 2017</a></p>
+                    </div>
+                </div>
+            
+            
+            </div>
+        
+        </div>
+        
+        <button onclick="goBack()" style="background-color: rgba(0,161,160,1); margin: 4px; padding: 15px 32px; border: none; color: white;">&larr; Go back</button>
+        
+        <script>
+        function goBack() {
+            window.history.back();
+        }
+        </script>
+        
+        </body>
+        </html>
+        
+        
+        
